@@ -30,7 +30,7 @@ h1{
 
 .introduction{
 	padding-top: 3rem;
-	padding-bottom: 1rem;
+	padding-bottom: 3rem;
 
 	h1{
 		text-align: center;
@@ -83,7 +83,7 @@ h1{
 		a{
 			font-weight: 400;
 			float: right;
-			display: block;
+			dsplay: block;
 			padding: .66rem;
 			background: $dark-red;
 			color: #fff;
@@ -96,5 +96,6 @@ h1{
 .header-icon{
 	margin: 0 auto;
 	display: block;
+	max-width: 6rem;
 	margin-bottom: 1rem;
 }

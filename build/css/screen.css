@@ -4532,7 +4532,7 @@ h1 {
 
 .introduction {
   padding-top: 3rem;
-  padding-bottom: 1rem; }
+  padding-bottom: 3rem; }
   .introduction h1 {
     text-align: center;
     font-size: 2em;
@@ -4580,7 +4580,7 @@ h1 {
   .call-to-action .block a {
     font-weight: 400;
     float: right;
-    display: block;
+    dsplay: block;
     padding: .66rem;
     background: #9E0C1E;
     color: #fff;
@@ -4590,6 +4590,7 @@ h1 {
 .header-icon {
   margin: 0 auto;
   display: block;
+  max-width: 6rem;
   margin-bottom: 1rem; }
 
 /*# sourceMappingURL=screen.css.map */
