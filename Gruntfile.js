@@ -21,17 +21,17 @@ module.exports = function(grunt){
       },
       bootstrap: {
         src: [
-          'js/util.js',
-          'js/alert.js',
-          'js/button.js',
-          'js/carousel.js',
-          'js/collapse.js',
-          'js/dropdown.js',
-          'js/modal.js',
-          'js/scrollspy.js',
-          'js/tab.js',
-          'js/tooltip.js',
-          'js/popover.js'
+          'build/js/util.js',
+          'build/js/alert.js',
+          'build/js/button.js',
+          'build/js/carousel.js',
+          'build/js/collapse.js',
+          'build/js/dropdown.js',
+          'build/js/modal.js',
+          'build/js/scrollspy.js',
+          'build/js/tab.js',
+          'build/js/tooltip.js',
+          'build/js/popover.js'
         ],
         dest: 'build/js/bootstrap.js'
       }
