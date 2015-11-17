@@ -4511,4 +4511,69 @@ a.bg-danger:focus, a.bg-danger:hover {
   .hidden-print .hidden-print {
     display: none !important; } }
 
+body {
+  font-family: 'Vollkorn', serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Vollkorn', serif; }
+
+h1 {
+  font-weight: 800; }
+
+.jumbotron {
+  background: #FFF8E6; }
+  .jumbotron h1 {
+    font-family: 'Unica One', sans-serif;
+    text-align: center; }
+
+.introduction {
+  padding-bottom: 1rem; }
+  .introduction h1 {
+    text-align: center;
+    font-size: 2em;
+    color: #1C2C53;
+    font-style: italic;
+    margin-bottom: 2rem; }
+  .introduction h2 {
+    font-family: 'Unica One', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    max-width: 15rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    color: #CE3100; }
+  .introduction p {
+    max-width: 40rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    text-align: justify;
+    padding: 0 2rem; }
+
+.call-to-action h1 {
+  text-align: center;
+  font-size: 2em;
+  font-style: italic;
+  max-width: 20rem;
+  margin: 0 auto;
+  margin-bottom: 2rem; }
+.call-to-action .block {
+  background: #FFF8E6;
+  padding: 1em; }
+  .call-to-action .block:before, .call-to-action .block:after {
+    content: " ";
+    display: table; }
+  .call-to-action .block:after {
+    clear: both; }
+  .call-to-action .block h3 {
+    float: left;
+    font-size: 1em;
+    display: block;
+    padding: .66rem 0; }
+  .call-to-action .block a {
+    float: right;
+    display: block;
+    padding: .66rem 2rem;
+    background: #9E0C1E;
+    color: #fff; }
+
 /*# sourceMappingURL=screen.css.map */

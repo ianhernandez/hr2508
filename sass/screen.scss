@@ -1,1 +1,84 @@
-@import "bootstrap/bootstrap.scss"
+@import "bootstrap/bootstrap.scss";
+
+$tan:       #FFF8E6;
+$red:   	  #CE3100;
+$dark-red:  #9E0C1E;
+$blue:      #1C2C53;
+
+body{
+	font-family: 'Vollkorn', serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Vollkorn', serif;
+}
+h1{
+	font-weight: 800;
+}
+
+.jumbotron{
+	background: $tan;
+	h1{
+		font-family: 'Unica One', sans-serif;
+		text-align: center;
+	}
+}
+
+.introduction{
+	padding-bottom: 1rem;
+
+	h1{
+		text-align: center;
+		font-size: 2em;
+		color: $blue;
+		font-style: italic;
+		margin-bottom: 2rem;
+	}
+	h2{
+		font-family: 'Unica One', sans-serif;
+		font-size: 1.5em;
+		text-align: center;
+		max-width: 15rem;
+		margin: 0 auto;
+		margin-bottom: 1rem;
+		color: $red;
+	}
+	p{
+		max-width: 40rem;
+		margin: 0 auto;
+		margin-bottom: 1rem;
+		text-align: justify;
+		padding: 0 2rem;
+	}
+}
+
+.call-to-action{
+	h1{
+		text-align: center;
+		font-size: 2em;
+		font-style: italic;
+		max-width: 20rem;
+		margin: 0 auto;
+		margin-bottom: 2rem;
+	}
+
+	.block{
+		background: $tan;
+		padding: 1em;
+		@include clearfix();
+		h3{
+			float: left;
+			font-size: 1em;
+			display: block;
+			padding: .66rem 0;
+		}
+		a{
+			float: right;
+			display: block;
+			padding: .66rem 2rem;
+			background: $dark-red;
+			color: #fff;
+		}
+	}
+
+}
