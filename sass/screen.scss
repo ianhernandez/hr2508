@@ -17,6 +17,20 @@ h1{
 	color: $blue;
 }
 
+.navbar-light{
+	background-color: $tan;
+}
+
+.navbar-brand{
+	float: left;
+}
+.navbar-toggler{
+	float: right;
+}
+.navbar-toggleable-xs{
+	clear: left;
+}
+
 .jumbotron{
 	background: $tan;
 	margin-bottom: 0;
@@ -47,12 +61,12 @@ h1{
 		margin-bottom: 2rem;
 		color: $red;
 	}
+	h3{
+		font-size: 1.3em;
+	}
 	p{
-		max-width: 40rem;
-		margin: 0 auto;
 		margin-bottom: 1rem;
 		text-align: justify;
-		padding: 0 2rem;
 	}
 }
 
@@ -91,6 +105,12 @@ h1{
 			min-width: 7rem;
 		}
 	}
+}
+
+.information{
+	padding: 0 2rem;
+	max-width: 40rem;
+	margin: 0 auto;
 }
 
 .header-icon{

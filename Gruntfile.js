@@ -73,19 +73,7 @@ module.exports = function(grunt){
       target: {
         src: 'index.html' // point to your HTML file.
       }
-    },
-
-		browserSync: {
-		    bsFiles: {
-		        src : 'build/css/*.css'
-		    },
-		    options: {
-		        server: {
-		            baseDir: "./"
-		        }
-		    }
-		}
-
+    }
 
 	});
 
@@ -105,6 +93,6 @@ module.exports = function(grunt){
 
 	grunt.loadNpmTasks('grunt-browser-sync');
 
-	grunt.registerTask('default', ['watch']);
+	grunt.registerTask('default', ['sass']);
 
 };
