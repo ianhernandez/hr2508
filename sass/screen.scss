@@ -14,23 +14,27 @@ h1,h2,h3,h4,h5,h6{
 }
 h1{
 	font-weight: 800;
+	color: $blue;
 }
 
 .jumbotron{
 	background: $tan;
+	margin-bottom: 0;
 	h1{
 		font-family: 'Unica One', sans-serif;
 		text-align: center;
+		color: $red;
+		font-size: 1.5em;
 	}
 }
 
 .introduction{
+	padding-top: 3rem;
 	padding-bottom: 1rem;
 
 	h1{
 		text-align: center;
 		font-size: 2em;
-		color: $blue;
 		font-style: italic;
 		margin-bottom: 2rem;
 	}
@@ -40,7 +44,7 @@ h1{
 		text-align: center;
 		max-width: 15rem;
 		margin: 0 auto;
-		margin-bottom: 1rem;
+		margin-bottom: 2rem;
 		color: $red;
 	}
 	p{
@@ -65,20 +69,32 @@ h1{
 	.block{
 		background: $tan;
 		padding: 1em;
+		margin-bottom: 1rem;
+		display: block;
 		@include clearfix();
 		h3{
 			float: left;
-			font-size: 1em;
+			font-size: 1.25em;
 			display: block;
 			padding: .66rem 0;
+			font-weight: 600;
+			font-style: italic;
 		}
 		a{
+			font-weight: 400;
 			float: right;
 			display: block;
-			padding: .66rem 2rem;
+			padding: .66rem;
 			background: $dark-red;
 			color: #fff;
+			text-align: center;
+			min-width: 7rem;
 		}
 	}
+}
 
+.header-icon{
+	margin: 0 auto;
+	display: block;
+	margin-bottom: 1rem;
 }

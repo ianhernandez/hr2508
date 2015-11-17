@@ -4518,20 +4518,24 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Vollkorn', serif; }
 
 h1 {
-  font-weight: 800; }
+  font-weight: 800;
+  color: #1C2C53; }
 
 .jumbotron {
-  background: #FFF8E6; }
+  background: #FFF8E6;
+  margin-bottom: 0; }
   .jumbotron h1 {
     font-family: 'Unica One', sans-serif;
-    text-align: center; }
+    text-align: center;
+    color: #CE3100;
+    font-size: 1.5em; }
 
 .introduction {
+  padding-top: 3rem;
   padding-bottom: 1rem; }
   .introduction h1 {
     text-align: center;
     font-size: 2em;
-    color: #1C2C53;
     font-style: italic;
     margin-bottom: 2rem; }
   .introduction h2 {
@@ -4540,7 +4544,7 @@ h1 {
     text-align: center;
     max-width: 15rem;
     margin: 0 auto;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     color: #CE3100; }
   .introduction p {
     max-width: 40rem;
@@ -4558,7 +4562,9 @@ h1 {
   margin-bottom: 2rem; }
 .call-to-action .block {
   background: #FFF8E6;
-  padding: 1em; }
+  padding: 1em;
+  margin-bottom: 1rem;
+  display: block; }
   .call-to-action .block:before, .call-to-action .block:after {
     content: " ";
     display: table; }
@@ -4566,14 +4572,24 @@ h1 {
     clear: both; }
   .call-to-action .block h3 {
     float: left;
-    font-size: 1em;
+    font-size: 1.25em;
     display: block;
-    padding: .66rem 0; }
+    padding: .66rem 0;
+    font-weight: 600;
+    font-style: italic; }
   .call-to-action .block a {
+    font-weight: 400;
     float: right;
     display: block;
-    padding: .66rem 2rem;
+    padding: .66rem;
     background: #9E0C1E;
-    color: #fff; }
+    color: #fff;
+    text-align: center;
+    min-width: 7rem; }
+
+.header-icon {
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 1rem; }
 
 /*# sourceMappingURL=screen.css.map */
