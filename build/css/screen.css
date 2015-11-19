@@ -4524,14 +4524,17 @@ h1 {
 .navbar-light {
   background-color: #FFF8E6; }
 
-.navbar-brand {
-  float: left; }
+@media (max-width: 33.9em) {
+  .navbar-brand {
+    float: left; } }
 
-.navbar-toggler {
-  float: right; }
+@media (max-width: 33.9em) {
+  .navbar-toggler {
+    float: right; } }
 
-.navbar-toggleable-xs {
-  clear: left; }
+@media (max-width: 33.9em) {
+  .navbar-toggleable-xs {
+    clear: left; } }
 
 .jumbotron {
   background: #FFF8E6;
@@ -4545,11 +4548,47 @@ h1 {
 .introduction {
   padding-top: 3rem;
   padding-bottom: 3rem; }
+  @media (min-width: 48em) {
+    .introduction {
+      padding-top: 6rem; } }
+  @media (min-width: 75em) {
+    .introduction {
+      position: relative; } }
+  .introduction .bottle-alpha, .introduction .bottle-beta {
+    display: none;
+    z-index: 0; }
+    @media (min-width: 75em) {
+      .introduction .bottle-alpha, .introduction .bottle-beta {
+        display: block;
+        position: absolute; } }
+    .introduction .bottle-alpha img, .introduction .bottle-beta img {
+      width: 100%; }
+  .introduction .bottle-alpha {
+    left: 9%;
+    width: 10%;
+    top: 20rem; }
+  .introduction .bottle-beta {
+    right: 10%;
+    width: 10%;
+    top: 18rem; }
   .introduction h1 {
     text-align: center;
     font-size: 2em;
     font-style: italic;
-    margin-bottom: 2rem; }
+    margin: 0 auto;
+    margin-bottom: 1em;
+    max-width: 30rem;
+    z-index: 10; }
+    @media (min-width: 48em) {
+      .introduction h1 {
+        margin: 0 auto;
+        font-size: 3.8em;
+        max-width: 50rem;
+        margin-bottom: .667em; } }
+    @media (min-width: 62em) {
+      .introduction h1 {
+        font-size: 5em;
+        max-width: 70rem; } }
   .introduction h2 {
     font-family: 'Unica One', sans-serif;
     font-size: 1.5em;
@@ -4560,9 +4599,29 @@ h1 {
     color: #CE3100; }
   .introduction h3 {
     font-size: 1.3em; }
-  .introduction p {
+    @media (min-width: 48em) {
+      .introduction h3 {
+        font-size: 2em;
+        margin-top: 1em; } }
+
+.information {
+  padding: 0 2rem;
+  max-width: 30rem;
+  margin: 0 auto; }
+  @media (min-width: 62em) {
+    .information {
+      max-width: 40rem; } }
+  .information p {
     margin-bottom: 1rem;
+    text-align: justify;
     text-align: justify; }
+    @media (min-width: 48em) {
+      .information p {
+        font-size: 1.2em; } }
+    @media (min-width: 62em) {
+      .information p {
+        font-size: 1.3em;
+        line-height: 1.667; } }
 
 .call-to-action h1 {
   text-align: center;
@@ -4571,6 +4630,10 @@ h1 {
   max-width: 20rem;
   margin: 0 auto;
   margin-bottom: 2rem; }
+@media (min-width: 48em) {
+  .call-to-action .block-list {
+    max-width: 40rem;
+    margin: 0 auto; } }
 .call-to-action .block {
   background: #FFF8E6;
   padding: 1em;
@@ -4591,22 +4654,46 @@ h1 {
   .call-to-action .block a {
     font-weight: 400;
     float: right;
-    dsplay: block;
+    display: block;
     padding: .66rem;
     background: #9E0C1E;
     color: #fff;
     text-align: center;
     min-width: 7rem; }
 
-.information {
-  padding: 0 2rem;
-  max-width: 40rem;
-  margin: 0 auto; }
-
 .header-icon {
   margin: 0 auto;
   display: block;
   max-width: 6rem;
   margin-bottom: 1rem; }
+
+@media (min-width: 62em) {
+  .call-to-action--image {
+    max-width: 80rem;
+    margin: 0 auto;
+    position: relative; }
+    .call-to-action--image .title-wrap {
+      width: 40rem;
+      margin: auto;
+      position: absolute;
+      top: 70%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      background: #1C2C53;
+      padding: 2rem 1rem; }
+    .call-to-action--image h1 {
+      color: #fff;
+      width: 100%;
+      margin-bottom: 0;
+      font-size: 3em;
+      max-width: 30rem; } }
+
+.site-footer {
+  background-color: #171717;
+  margin-top: 5rem;
+  padding-top: 7rem;
+  padding-bottom: 2rem; }
 
 /*# sourceMappingURL=screen.css.map */

@@ -22,13 +22,19 @@ h1{
 }
 
 .navbar-brand{
-	float: left;
+	@include media-breakpoint-down(xs) {
+		float: left;
+	}
 }
 .navbar-toggler{
-	float: right;
+	@include media-breakpoint-down(xs) {
+		float: right;
+	}
 }
 .navbar-toggleable-xs{
-	clear: left;
+	@include media-breakpoint-down(xs) {
+		clear: left;
+	}
 }
 
 .jumbotron{
@@ -45,12 +51,53 @@ h1{
 .introduction{
 	padding-top: 3rem;
 	padding-bottom: 3rem;
+	@include media-breakpoint-up(md){
+		padding-top: 6rem;
+	}
+	@include media-breakpoint-up(xl){
+		position: relative;
+	}
+	.bottle-alpha,.bottle-beta{
+		display: none;
+		z-index: 0;
+		@include media-breakpoint-up(xl){
+			display: block;
+			position: absolute;
 
+		}
+		img{
+			width: 100%;
+		}
+	}
+	.bottle-alpha{
+		left: 10%;
+		width: 10%;
+		top: 20rem;
+	}
+	.bottle-beta{
+		right: 10%;
+		width: 10%;
+		top: 18rem;
+	}
 	h1{
 		text-align: center;
 		font-size: 2em;
 		font-style: italic;
-		margin-bottom: 2rem;
+		margin: 0 auto;
+		margin-bottom: 1em;
+		max-width: 30rem;
+		z-index: 10;
+
+		@include media-breakpoint-up(md){
+			margin: 0 auto;
+			font-size: 3.8em;
+			max-width: 50rem;
+			margin-bottom: .667em;
+		}
+		@include media-breakpoint-up(lg){
+			font-size: 5em;
+			max-width: 70rem;
+		}
 	}
 	h2{
 		font-family: 'Unica One', sans-serif;
@@ -63,12 +110,34 @@ h1{
 	}
 	h3{
 		font-size: 1.3em;
+		@include media-breakpoint-up(md){
+			font-size: 2em;
+			margin-top: 1em;
+		}
+	}
+}
+
+.information{
+	padding: 0 2rem;
+	max-width: 30rem;
+	margin: 0 auto;
+	@include media-breakpoint-up(lg){
+		max-width: 40rem;
 	}
 	p{
 		margin-bottom: 1rem;
 		text-align: justify;
+		@include media-breakpoint-up(md){
+			font-size: 1.2em;
+		}
+		text-align: justify;
+		@include media-breakpoint-up(lg){
+			font-size: 1.3em;
+			line-height: 1.667;
+		}
 	}
 }
+
 
 .call-to-action{
 	h1{
@@ -79,7 +148,12 @@ h1{
 		margin: 0 auto;
 		margin-bottom: 2rem;
 	}
-
+	.block-list{
+		@include media-breakpoint-up(md){
+			max-width: 40rem;
+			margin: 0 auto;
+		}
+	}
 	.block{
 		background: $tan;
 		padding: 1em;
@@ -97,7 +171,7 @@ h1{
 		a{
 			font-weight: 400;
 			float: right;
-			dsplay: block;
+			display: block;
 			padding: .66rem;
 			background: $dark-red;
 			color: #fff;
@@ -107,15 +181,52 @@ h1{
 	}
 }
 
-.information{
-	padding: 0 2rem;
-	max-width: 40rem;
-	margin: 0 auto;
-}
 
 .header-icon{
 	margin: 0 auto;
 	display: block;
 	max-width: 6rem;
 	margin-bottom: 1rem;
+}
+
+.call-to-action--image{
+	@include media-breakpoint-up(lg){
+		max-width: 80rem;
+		margin: 0 auto;
+		position: relative;
+		.title-wrap{
+			width: 40rem;
+			margin: auto;
+			position: absolute;
+			top: 70%; left: 50%;
+			-webkit-transform: translate(-50%,-50%);
+			-ms-transform: translate(-50%,-50%);
+			transform: translate(-50%,-50%);
+			background: $blue;
+			padding: 2rem 1rem;
+		}
+		h1{
+			color: #fff;
+			width: 100%;
+			margin-bottom: 0;
+			font-size: 3em;
+			max-width: 30rem;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+.site-footer{
+	background-color: #171717;
+	margin-top: 5rem;
+	padding-top: 7rem;
+	padding-bottom: 2rem;
 }
